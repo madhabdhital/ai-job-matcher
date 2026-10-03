@@ -114,7 +114,7 @@ cd ai-job-matcher
 ./mvnw spring-boot:run        # Windows: mvnw.cmd spring-boot:run
 ```
 
-The API starts on **http://localhost:8080**. On startup the app imports jobs from Himalayas, so the feed fills in after a moment.
+The API starts on **http:///api**. On startup the app imports jobs from Himalayas, so the feed fills in after a moment.
 
 ### 4. Run the frontend
 
