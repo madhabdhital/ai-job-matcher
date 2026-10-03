@@ -2,7 +2,7 @@
 
 A full-stack web app that helps students find jobs and internships in their own field. Upload your resume, see openings matched to your domain, and get an AI analysis of how well your resume fits a job, with matched skills, missing skills and a short cover letter.
 
-**Live demo:** https://YOUR-APP.vercel.app
+**Live demo:** https://ai-job-matcher-xi.vercel.app/
 
 > The backend runs on a free hosting plan and sleeps when idle, so the first load after a quiet period can take about a minute.
 
