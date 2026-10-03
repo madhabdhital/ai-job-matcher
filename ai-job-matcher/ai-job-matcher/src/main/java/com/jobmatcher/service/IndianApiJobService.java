@@ -19,10 +19,10 @@ import java.util.List;
 @Service
 public class IndianApiJobService {
 
-    @Value("${indianapi.jobs.url}")
+    @Value("${indianapi.jobs.url:}")
     private String jobsUrl;
 
-    @Value("${indianapi.jobs.api-key}")
+    @Value("${indianapi.jobs.api-key:}")
     private String apiKey;
 
     private final RestTemplate restTemplate = new RestTemplate();
@@ -38,6 +38,10 @@ public class IndianApiJobService {
     }
 
     public int fetchAndSaveJobs() {
+
+        if (jobsUrl.isBlank() || apiKey.isBlank()) {
+            return 0;
+        }
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("x-api-key", apiKey);
