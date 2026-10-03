@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import "./JobDetails.css";
 import Navbar from "../components/Navbar";
+import JobDescription from "../components/JobDescription";
 
 function JobDetails() {
   const { jobId } = useParams();
@@ -241,10 +242,9 @@ function JobDetails() {
 
             <h2>Job Description</h2>
 
-            <div className="job-description">
-              {job.description ||
-                "No job description available."}
-            </div>
+          <div className="job-description">
+              <JobDescription html={job.description} />
+          </div>
 
           </section>
 

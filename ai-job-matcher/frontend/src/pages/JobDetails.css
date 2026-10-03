@@ -85,7 +85,6 @@
 }
 
 .job-description {
-  white-space: pre-wrap;
   line-height: 1.7;
   color: #444;
   font-size: 15px;
@@ -222,4 +221,31 @@
 
 .apply-button:hover {
   background: #f3f4fa;
+}
+
+.job-description-html h1,
+.job-description-html h2,
+.job-description-html h3 {
+  margin: 18px 0 8px;
+  font-size: 17px;
+  color: var(--text);
+}
+
+.job-description-html p,
+.job-description-html div {
+  margin: 0 0 10px;
+}
+
+.job-description-html ul,
+.job-description-html ol {
+  margin: 8px 0 14px;
+  padding-left: 22px;
+}
+
+.job-description-html li {
+  margin-bottom: 6px;
+}
+
+.job-description-html a {
+  color: var(--primary);
 }
